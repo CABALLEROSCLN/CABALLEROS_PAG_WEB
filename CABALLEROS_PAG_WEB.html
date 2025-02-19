@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Deportivo de Basketball CABALLEROS DE CULIACÁN</title>
+
+    <!-- Estilos de AOS (Animaciones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+            background-image: url('https://boletomovil.s3.amazonaws.com/paths/caballeros-culiacan-sm.jpeg');
+            background-repeat: repeat-y;
+            background-position: left center, right center;
+            background-size: contain;
+        }
+
+        /* Header con animación */
+        header {
+            text-align: center;
+            color: #FFD700;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 4rem 2rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header-content h1 {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #4B002E;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Transiciones suaves en el menú */
+        nav a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #2a2a2a;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #FFD700;
+            text-align: center;
+        }
+
+        /* Efecto de zoom en imágenes */
+        .image-container img,
+        .about-images img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover,
+        .about-images img:hover {
+            transform: scale(1.1);
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+            padding-right: 2rem;
+        }
+
+        .about-images {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            background: linear-gradient(135deg, #800020, #4B002E);
+            color: #FFD700;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul li {
+            background: #FFD700;
+            color: #1a1a1a;
+            margin: 0.5rem 0;
+            padding: 0.8rem;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Espacio entre líneas en "Horarios" */
+        #schedule p {
+            line-height: 3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>CLUB DEPORTIVO CABALLEROS DE CULIACÁN</h1>
+            <p><strong>UN LUGAR PARA APASIONADOS DEL BASKETBALL</strong></p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">Nosotros</a>
+        <a href="#teams">Equipos</a>
+        <a href="#schedule">Horarios</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <div class="container" id="about" data-aos="fade-up">
+        <h2>Sobre Nosotros</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p><strong>Somos un club deportivo dedicado a fomentar el basketball en nuestra comunidad, brindando un espacio para el desarrollo físico, técnico y mental de nuestros jugadores jovenes...</strong></p>
+            </div>
+            <div class="about-images">
+                <img src="https://www.noroeste.com.mx/binrepository/945x630/0c0/0d0/none/12707/QAAA/caballeros-2_1-3521092_20230225164209.jpg" alt="Jugadores en acción">
+                <img src="https://cibacopa.org/wp-content/uploads/1998/11/reno-valle-286x300.jpg" alt="Jugadores en acción">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="teams" data-aos="fade-up">
+        <h2>Equipos</h2>
+        <ul>
+            <li>Infantil (6-12 años)</li>
+        </ul>
+        <div class="image-container">
+            <img src="equipo_infantil.jpeg" alt="Jugadores en acción Infantil">
+            <img src="equipo_infantil2.jpeg" alt="Entrenamiento Infantil">
+        </div>
+    </div>
+
+    <div class="container" id="schedule" data-aos="fade-up">
+        <h2>Horarios</h2>
+        <p>
+            <strong>Infantil:</strong> Lunes y Miércoles - 4:00 PM a 6:00 PM<br>
+            <strong>Juvenil:</strong> Martes y Jueves - 5:00 PM a 7:00 PM<br>
+        </p>
+    </div>
+
+    <div class="container" id="contact" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p><strong>Email:</strong> mercadotecnia@caballerosdeculiacan.com</p>
+        <p><strong>Teléfono:</strong> +52 673 135 4574</p>
+        <p><strong>WhatsApp:</strong> +521 6672114807</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Club Deportivo de Basketball. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
+
+

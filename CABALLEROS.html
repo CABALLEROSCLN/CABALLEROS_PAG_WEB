@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Deportivo de Basketball CABALLEROS DE CULIACAN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1f1f1f;
+            line-height: 1.6; /* Ajuste del interlineado */
+        }
+        header {
+            background-color: #800020; /* Guinda */
+            color: #FFD700; /* Dorado */
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #4B002E; /* Tono más oscuro de guinda */
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #FFD700; /* Dorado */
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: center;
+            background-color: #800020; /* Guinda */
+            color: #FFD700; /* Dorado */
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .image-left, .image-right {
+            position: fixed;
+            top: 50%; /* Centra verticalmente */
+            transform: translateY(-50%);
+            z-index: 0;
+        }
+        .image-left {
+            left: 2%; /* Mueve la imagen izquierda hacia la derecha un 10% */
+        }
+        .image-right {
+            left: 86%; /* Mueve la imagen derecha hacia la izquierda un 5% */
+            right: auto; /* Elimina la propiedad 'right' para evitar que se sobrepongan las dos */
+        }
+        .image-left img {
+            width: 15vw; /* Ocupa un 15% del ancho de la ventana */
+            height: auto; /* Mantiene la proporción de la imagen */
+            max-width: 180px; /* Limita el ancho máximo de la imagen */
+        }
+        .image-right img {
+            width: 160px; /* Ajusta el tamaño de la imagen derecha */
+            height: auto;
+        }
+        section#about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem; /* Espacio entre los elementos */
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem; /* Espacio entre las imágenes */
+        }
+        .image-container img {
+            max-width: 45%; /* Cada imagen ocupa un máximo del 45% del ancho del contenedor */
+            height: auto; /* Mantiene la proporción */
+            border: 2px solid #00000080; /* Borde negro */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CLUB DEPORTIVO DE BASKETBALL CABALLEROS DE CULIACAN</h1>
+        <p>Un lugar para apasionados del basketball</p>
+    </header>
+
+    <div class="image-left">
+        <img src="https://www.alcanciadigitalteleton.mx/recursos/u/3829/stock/3526_cabs_C.png" alt="Balón de Basketball Izquierda">
+    </div>
+    <div class="image-right">
+        <img src="https://cibacopa.org/wp-content/uploads/1998/05/luis-morachis-300x300.jpg" alt="Balón de Basketball Derecha">
+    </div>
+
+    <nav>
+        <a href="#about">Nosotros</a>
+        <a href="#teams">Equipos</a>
+        <a href="#schedule">Horarios</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <section id="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos un club deportivo dedicado a fomentar el basketball en nuestra comunidad. Contamos con entrenadores certificados y diferentes categorías para todas las edades.</p>
+        <div class="image-container">
+            <img src="https://www.noroeste.com.mx/binrepository/945x630/0c0/0d0/none/12707/QAAA/caballeros-2_1-3521092_20230225164209.jpg" alt="Jugadores de basketball en acción">
+            <img src="https://cibacopa.org/wp-content/uploads/1998/11/reno-valle-286x300.jpg" alt="Jugadores de basketball en acción">
+        </div>
+    </section>
+
+    <section id="teams">
+        <h2>Equipos</h2>
+        <ul>
+            <li>Infantil (6-12 años)</li>
+            <li>Juvenil (13-17 años)</li>
+        </ul>
+    </section>
+
+    <section id="schedule">
+        <h2>Horarios</h2>
+        <p>
+            <strong>Infantil:</strong> Lunes y Miércoles - 4:00 PM a 6:00 PM<br>
+            <strong>Juvenil:</strong> Martes y Jueves - 5:00 PM a 7:00 PM<br>
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2><strong>Contacto</strong></h2>
+        <p><strong>Para más información, contáctanos en:</strong></p>
+        <p><strong>Email:</strong> mercadotecnia@caballerosdeculiacan.com</p>
+        <p><strong>Teléfono:</strong> +52 673 135 4574</p>
+        <p><strong>WhatsApp:</strong> +521 6672114807</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Club Deportivo de Basketball. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
